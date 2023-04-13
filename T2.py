@@ -4,10 +4,13 @@
 import random
 x = random.randint(1,1000)
 y = random.randint(1,1000)
-print(x + y)
-print(x * y)
 
-for i in range(x + y):
-    if (i * (x + y - i)) == x * y:
-        print("Петя загадал",i, x + y - i, "или",x + y - i,i)
+summ = x + y
+prod = x * y
+print(summ)
+print(prod)
+
+for i in range(summ):
+    if (i * (summ - i)) == prod:
+        print("Петя загадал",i, summ - i, "или",summ - i,i)
         break
